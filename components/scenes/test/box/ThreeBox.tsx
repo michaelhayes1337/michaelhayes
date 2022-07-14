@@ -4,6 +4,7 @@ export interface IThreeBox {
 
 const ThreeBox: React.FC<IThreeBox> = ({ props }) => {
   return (
+    //@ts-ignore
     <mesh rotateX={3} rotateY={0.2} recieveShadow={true} castShadow={true}>
       <boxBufferGeometry />
       <meshPhysicalMaterial color={'white'} />
